@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AVCamViewController">
+            <connections>
+                <outlet property="buttonView" destination="yMN-2J-8j6" id="ozc-jJ-9ra"/>
+                <outlet property="cameraButton" destination="Op1-f4-bCz" id="Owx-YF-kya"/>
+                <outlet property="libButton" destination="uiM-Sg-dRO" id="NiB-gs-PIG"/>
+                <outlet property="overlayImageView" destination="3KX-9h-yg7" id="JYb-tb-6Tn"/>
+                <outlet property="previewView" destination="ocG-rS-Nhf" id="I0l-mb-LJn"/>
+                <outlet property="recordButton" destination="3F7-cP-JzC" id="iup-M6-jlm"/>
+                <outlet property="recordTimerLabel" destination="QSe-Fl-WuK" id="Uke-mh-miE"/>
+                <outlet property="shadowFlipImageView" destination="zsi-KA-SSS" id="Ie3-kG-IiU"/>
+                <outlet property="shadowLibImageView" destination="3DD-Uc-YKh" id="PSf-mP-DxV"/>
+                <outlet property="shadowRecImageView" destination="b90-SQ-uGg" id="Rmd-Fz-cby"/>
+                <outlet property="storytipImageView" destination="fgm-Ku-I0O" id="0eu-kS-Whb"/>
+                <outlet property="view" destination="vDa-HE-YS0" id="ypL-JH-NWt"/>
+            </connections>
+        </placeholder>
+        <view contentMode="scaleToFill" id="vDa-HE-YS0">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocG-rS-Nhf" userLabel="PreviewView" customClass="AVCamPreviewView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="INSIDE_wit.png" translatesAutoresizingMaskIntoConstraints="NO" id="3KX-9h-yg7">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z6n-zY-hXN">
+                            <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09F-rM-94A">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.054901960784313725" green="0.28627450980392155" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSe-Fl-WuK">
+                            <rect key="frame" x="285" y="78" width="27" height="111"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fgm-Ku-I0O" userLabel="storylineImageView">
+                            <rect key="frame" x="30" y="167" width="118" height="234"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yMN-2J-8j6">
+                    <rect key="frame" x="0.0" y="498" width="320" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shadow-Flip-Camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="zsi-KA-SSS">
+                            <rect key="frame" x="232" y="9" width="57" height="59"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shadow-Record-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="b90-SQ-uGg">
+                            <rect key="frame" x="121" y="9" width="56" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shadow-Lib-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="3DD-Uc-YKh">
+                            <rect key="frame" x="6" y="16" width="52" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Op1-f4-bCz">
+                            <rect key="frame" x="250" y="10" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" image="Flip-Camera-Button.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="changeCamera:" destination="-1" eventType="touchUpInside" id="DXp-0O-tuL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiM-Sg-dRO">
+                            <rect key="frame" x="20" y="10" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" image="Lib-Button.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="showLib:" destination="-1" eventType="touchUpInside" id="fss-J6-jE3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3F7-cP-JzC">
+                            <rect key="frame" x="135" y="10" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" image="Record-Button.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toggleMovieRecording:" destination="-1" eventType="touchUpInside" id="ccD-Gs-E35"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ocG-rS-Nhf" secondAttribute="bottom" id="5ak-ry-Hzf"/>
+                <constraint firstAttribute="trailing" secondItem="ocG-rS-Nhf" secondAttribute="trailing" id="pqs-u3-Tyw"/>
+                <constraint firstItem="ocG-rS-Nhf" firstAttribute="leading" secondItem="vDa-HE-YS0" secondAttribute="leading" id="rsG-ZI-xjM"/>
+                <constraint firstItem="ocG-rS-Nhf" firstAttribute="top" secondItem="vDa-HE-YS0" secondAttribute="top" id="wdz-Ic-znp"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="Flip-Camera-Button.png" width="50" height="50"/>
+        <image name="INSIDE_wit.png" width="640" height="480"/>
+        <image name="Lib-Button.png" width="50" height="50"/>
+        <image name="Record-Button.png" width="50" height="50"/>
+        <image name="Shadow-Flip-Camera.png" width="57" height="59"/>
+        <image name="Shadow-Lib-Button.png" width="52" height="48"/>
+        <image name="Shadow-Record-Button.png" width="56" height="66"/>
+    </resources>
+</document>
